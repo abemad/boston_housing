@@ -13202,7 +13202,7 @@ mSTA0GnwAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Maximum Depth for the model should be 3 because there does not seem to be over- or underfitting. The training score slightly decreases to 0.8 which is not a low score. The testing curve increases with more data also to around 0.8 which means the model fits the data well and generalizes well. Adding more training points can benefit the model but it's not necessary because the learning curves seem to be converging to 0.8.</p>
+<p><strong>Answer: </strong> Maximum Depth for the model should be 3 because there does not seem to be over- or underfitting. The training score slightly decreases to 0.8 which is not a low score. The testing curve increases with more data also to around 0.8 which means the model fits the data well and generalizes well. Adding more training points is not necessary because the learning rate is already high, so adding more points will not change the testing score significantly.</p>
 
 </div>
 </div>
@@ -13707,7 +13707,7 @@ On the other hand, when the model is trained with a maximum depth of 10, it suff
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Grid search technique is a technique where different models are tested on the dataset and the best model that performs on the testing set is the one that gets chosen. In other words, each model is trained and tested individually. At the end the model that performed best is selected.</p>
+<p><strong>Answer: </strong> Grid search technique is an exhaustive search technique where a model with different hyperparameters is tested on the dataset and the best candidate that performs on the testing set is the one that gets chosen. The grid search tries out all candidates from a grid of parameter values and selects the winner. The output is the model with best performance. In other words, the grid search exhaustively searches for a combination of hyperparameters of a model in a grid of parameter values and leads to the model (the hyperparamters) that performs best.</p>
 
 </div>
 </div>
